@@ -1,0 +1,5 @@
+name: TitleJoin
+main: TitleJoin\Main
+version: 1.1
+api: [2.0.0, 3.0.0]
+description: Send a title to a player when this join in your server
