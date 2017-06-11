@@ -29,7 +29,7 @@ class Send extends PluginTask{
 	
   	public function onRun($tick){
 		$player = $this->player->getName();
-	  	$this->player->sendTitle("§l§aWelcome", "§l§b->§6 " . $player . " §b<-");
+	  	$this->player->addTitle("§l§aWelcome", "§l§b->§6 " . $player . " §b<-");
   	}
 	
 	public function onDisable(){
