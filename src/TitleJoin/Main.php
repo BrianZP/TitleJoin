@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener{
     public function Join(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $task = new Send($this,$player);
-        $this->getServer()->getScheduler()->scheduleDelayedTask($task,20);
+        $this->getServer()->getScheduler()->scheduleDelayedTask($task,50);
     }
 }
 class Send extends PluginTask{
@@ -29,7 +29,7 @@ class Send extends PluginTask{
 	
   	public function onRun($tick){
 		$player = $this->player->getName();
-	  	$this->player->addTitle("§l§6-§a⚒§6- §eHeaven§fCraft §6-§a⚒§6-§r");
+	  	$this->player->addTitle("§l§eHeaven§fCraft§r");
   	}
 	
 	public function onDisable(){
