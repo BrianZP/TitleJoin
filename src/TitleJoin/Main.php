@@ -12,7 +12,7 @@ class Main extends PluginBase implements Listener{
      
     public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->getLogger()->info("§aPlugin enabled");
+		$this->getLogger()->info("§a[TitleJoin] Plugin enabled");
     }
 	
     public function Join(PlayerJoinEvent $event){
@@ -29,10 +29,10 @@ class Send extends PluginTask{
 	
   	public function onRun($tick){
 		$player = $this->player->getName();
-	  	$this->player->addTitle("§l§aWelcome", "§l§b->§6 " . $player . " §b<-");
+	  	$this->player->addTitle("§l§6-§a⚒§6- §eHeaven§fCraft §6-§a⚒§6-§r");
   	}
 	
 	public function onDisable(){
-	$this->getLogger()->info("§cPlugin disabled");
+	$this->getLogger()->info("§c[TitleJoin] Plugin disabled");
 	}
 }  
